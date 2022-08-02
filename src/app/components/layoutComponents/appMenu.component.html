@@ -3,8 +3,8 @@
         <div class="content-width pd0">
         <div   class="AppMenuContent">
                 <ul>
-                    <li *ngFor="let _routeConfigData of routeConfigData">
-                            <a routerLink={{_routeConfigData.routeLink}} >  {{_routeConfigData.routeLinkText}}  </a> 
+                    <li  *ngFor="let _routeConfigData of routeConfigData">
+                            <a *ngIf="loadEmployeeMenu"  routerLink={{_routeConfigData.routeLink}} >  {{_routeConfigData.routeLinkText}}  </a> 
                     </li>
                     <li>  <a *ngIf="loadEmployeeMenu" routerLink={{employeeRouteLink}} >  Employee Data  </a>  </li>
                      

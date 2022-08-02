@@ -33,7 +33,7 @@ function GetRoute(): Routes {
       switch(_item.showIn)
       {
       // adding menu routes without canActivate
-      case GlobalConst.appMenuShowIn_menu:  case GlobalConst.appMenuShowIn_employeeMenu:
+      case GlobalConst.appMenuShowIn_menu:  case GlobalConst.appMenuShowIn_employeeMenu: case GlobalConst.appMenuShowIn_login:
         _route.push({path: _item.routeLink, component: _item.routeComponent, canActivate: [AuthenticationService]});
         break;
 

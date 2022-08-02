@@ -63,7 +63,7 @@ export class AppHeaderComponent implements OnInit {
         if(confirm("Are you sure to Logout?"))
         {
             this._loginService.doLogOutUser();
-            this._router.navigateByUrl("/Home");
+            this._router.navigateByUrl("/Login");
         }
     }
 }
